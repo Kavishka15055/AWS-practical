@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Form, Button, Card, Alert, Spinner } from 'react-bootstrap';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://13.229.55.54/api';
 
 const AddProduct = () => {
     const [formData, setFormData] = useState({
@@ -114,7 +114,7 @@ const AddProduct = () => {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    {/* <Form.Group className="mb-3">
                         <Form.Label>Product Image</Form.Label>
                         <Form.Control
                             type="file"
@@ -130,7 +130,7 @@ const AddProduct = () => {
                                 />
                             </div>
                         )}
-                    </Form.Group>
+                    </Form.Group> */}
 
                     <div className="d-flex gap-2">
                         <Button

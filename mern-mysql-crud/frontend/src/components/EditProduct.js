@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Form, Button, Card, Alert, Spinner } from 'react-bootstrap';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://13.229.55.54/api';
 
 const EditProduct = () => {
     const { id } = useParams();
@@ -153,7 +153,7 @@ const EditProduct = () => {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    {/* <Form.Group className="mb-3">
                         <Form.Label>Product Image</Form.Label>
                         {currentImage && (
                             <div className="mb-2">
@@ -183,7 +183,7 @@ const EditProduct = () => {
                         <Form.Text className="text-muted">
                             Leave empty to keep current image
                         </Form.Text>
-                    </Form.Group>
+                    </Form.Group> */}
 
                     <div className="d-flex gap-2">
                         <Button

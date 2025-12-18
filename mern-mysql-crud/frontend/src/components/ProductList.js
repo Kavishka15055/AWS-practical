@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Card, Button, Row, Col, Alert, Spinner } from 'react-bootstrap';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://13.229.55.54/api';
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
